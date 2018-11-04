@@ -103,7 +103,7 @@ func main() {
         notifyCounter = 0
       }
 
-      if (notifyCounter * timer.poolingIntervalSec) >= (timer.notifyIntervalMin * 60) {
+      if (notifyCounter * timer.poolingIntervalSec) >= (timer.notifyIntervalMin * 60) && getBatteryPercentage() <= power.batteryPercentage {
         sendNotification("*")
         notifyCounter = 0
       }
