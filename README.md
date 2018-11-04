@@ -1,2 +1,3 @@
 # powermon
-Simple linux battery monitor daemon
+
+go build -o powermon
